@@ -1,0 +1,52 @@
+#VTI=0 or TTI=1
+mode=0
+#velocity path
+vppath=./model/vp_801_801_187.dat
+#eps path
+epspath=./model/vtieps_801_801_187.dat
+#delta path
+deltapath=./model/vtidelta_801_801_187.dat
+#the path
+thepath=./model/the.dat
+#phi path
+phipath=./model/phi.dat
+#shot number X
+Nsx=100
+#shot number Y
+Nsy=100
+#original model size X
+mgridnumx=801
+#original model size Y
+mgridnumy=801
+#original model size Z
+mgridnumz=187
+#shot position X
+sx=5
+#shot position Y
+sy=1
+#shot position Z
+sz=2
+#receiver position Z
+rz=1
+#absorb layer width  X
+PMLX=30
+#absorb layer width  Y
+PMLY=30
+#absorb layer width  Z
+PMLZ=30
+#time sample number
+Nt=2501
+#output snap interval
+nsnap=50000
+#time sample interval
+dt=0.00033
+#space sample interval X
+dx=25
+#space sample interval Y
+dy=25
+#space sample interval Z
+dz=25
+#wavelet main frequency 
+Fm=20
+#deviceNum 
+devicenum=4

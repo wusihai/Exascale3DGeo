@@ -1,0 +1,19 @@
+Max Vp velocity is 6000.000m/s, Suggested time interval dt=0.001034
+Original model size      :mgridnumx=801,mgridnumy=801,mgridnumz=187
+Suggested absorbed layer :PMLX=30,PMLY=30,PMLZ=30
+Total calculation size   :NX=861,NY=861,NZ=247
+Total shot X,Y is 1,20 
+ishot0 nt = 0
+ishot0 nt = 200
+ishot0 nt = 400
+ishot0 nt = 600
+ishot0 nt = 800
+ishot0 nt = 1000
+ishot0 nt = 1200
+ishot0 nt = 1400
+ishot0 nt = 1600
+ishot0 nt = 1800
+ishot0 nt = 2000
+ishot0 nt = 2200
+ishot0 nt = 2400
+Total Time=61.514674

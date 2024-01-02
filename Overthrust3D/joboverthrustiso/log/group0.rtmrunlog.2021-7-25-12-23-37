@@ -1,0 +1,10 @@
+***************************************************
+                  3D pure qP wave RTM              
+                     MPI + FD                      
+                                                   
+***************************************************
+Max Vp velocity is 4000.000, Suggested time interval dt=0.001550
+Original model size      :mgridnumx=100,mgridnumy=801,mgridnumz=187
+Suggested absorbed layer :PMLX=30,PMLY=30,PMLZ=30
+Total calculation size   :NX=160,NY=861,NZ=247
+Total shot X,Y is 1,4 
