@@ -1,0 +1,40 @@
+
+import numpy as np
+from matplotlib import pyplot as plt
+import sys 
+
+nx=int(sys.argv[1])
+ny=int(sys.argv[2])
+nz=int(sys.argv[3])
+subx=int(nx/int(sys.argv[4]))
+suby=int(ny/int(sys.argv[5]))
+snap1=np.zeros((nx,ny,nz),dtype='float32')
+for i in range(int(sys.argv[4])):
+  for j in range(int(sys.argv[5])):
+    print("./snap/sr-snap%d-%d-755.dat"%(j,i))
+    f=open("./snap/r-snap%d-%d-755.dat"%(j,i))
+    snap=np.fromfile(f,dtype='float32');
+    snap1[0+subx*i:subx+subx*i,0+suby*j:suby+suby*j,:]=snap.reshape(subx,suby,nz)
+snap11=np.zeros((nx,ny,nz),dtype='float32')
+aa=snap1[100,:,:].T
+aa.tofile("./snap/snaprtm.dat")
+
+
+
+#plt.imshow(np.dstack((a,b)))
+ax=plt.gca()
+plt.subplot(121)
+plt.imshow(snap1[100,:,:].T)
+plt.colorbar()
+plt.xlabel("yyy")
+plt.ylabel("zzz")
+#plt.imshow(snap1[64,:,:].T)
+plt.subplot(122)
+plt.imshow(snap1[:,100,:].T)
+plt.colorbar()
+plt.xlabel("xxx")
+plt.ylabel("zzz")
+##plt.subplot(133)
+##plt.imshow(snap1[30:-30,30:-30,105].T)
+##ax.invert_xaxis()
+plt.show()
